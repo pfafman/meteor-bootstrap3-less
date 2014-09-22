@@ -1,5 +1,5 @@
 // Defines where the package is
-@bootstrap3-less-root: "/packages/pfafman:bootstrap3-less";
+@bootstrap3-less-root: "./"; //"/packages/pfafman:bootstrap3-less";
 
 // Import Bootstrap core variables and mixin
 // ---------------------------------------
@@ -20,9 +20,9 @@
 // (This is the full set of package files, include only what you need)
 
 // Reset and dependencies
-@import "@{bootstrap3-less-root}/lib/less/normalize.import.less";
-@import "@{bootstrap3-less-root}/lib/less/print.import.less";
-@import "@{bootstrap3-less-root}/lib/less/glyphicons.import.less";
+@import "@{bootstrap3-less-root}lib/less/normalize.import.less";
+@import "@{bootstrap3-less-root}lib/less/print.import.less";
+@import "@{bootstrap3-less-root}lib/less/glyphicons.import.less";
 
 // Core CSS
 @import "@{bootstrap3-less-root}/lib/less/scaffolding.import.less";
