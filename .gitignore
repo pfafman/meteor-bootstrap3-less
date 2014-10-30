@@ -2,3 +2,4 @@
 .build*
 bootstrap/
 smart.lock
+less-old/

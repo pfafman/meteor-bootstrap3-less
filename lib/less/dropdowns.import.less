@@ -103,16 +103,15 @@
   &:focus {
     color: @dropdown-link-disabled-color;
   }
-}
-// Nuke hover/focus effects
-.dropdown-menu > .disabled > a {
+
+  // Nuke hover/focus effects
   &:hover,
   &:focus {
     text-decoration: none;
     background-color: transparent;
     background-image: none; // Remove CSS gradient
     .reset-filter();
-    cursor: not-allowed;
+    cursor: @cursor-disabled;
   }
 }
 
@@ -198,7 +197,7 @@
 
 // Component alignment
 //
-// Reiterate per navbar.import.less and the modified component alignment there.
+// Reiterate per navbar.less and the modified component alignment there.
 
 @media (min-width: @grid-float-breakpoint) {
   .navbar-right {
@@ -212,4 +211,3 @@
     }
   }
 }
-

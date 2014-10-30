@@ -1,6 +1,12 @@
 // Defines where the package is
 @bootstrap3-less-root: "./"; //"/packages/pfafman:bootstrap3-less";
 
+// Firefox hack ???
+// http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
 // Import Bootstrap core variables and mixin
 // ---------------------------------------
 // (you need these first, to get the default setup for bootstrap)
