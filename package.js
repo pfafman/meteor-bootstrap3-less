@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Bootstrap 3, with Less files.",
-  version: "0.3.3",
+  version: "0.3.3_1",
   git: "https://github.com/pfafman/meteor-bootstrap3-less",
 });
 
