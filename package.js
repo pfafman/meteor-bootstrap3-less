@@ -1,12 +1,12 @@
 Package.describe({
   summary: "Bootstrap 3, with Less files.",
-  version: "3.3.0",
+  version: "3.3.1",
   git: "https://github.com/pfafman/meteor-bootstrap3-less",
 });
 
 
 Package.on_use(function (api) {
-  api.versionsFrom("METEOR@0.9.0");
+  api.versionsFrom("METEOR@1.0");
   api.use('jquery', 'client');
   api.use('less', 'client');
 
