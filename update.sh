@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BOOTSTRAP_ROOT=$1
+BOOTSTRAP_GIT_ROOT=$1
 BOOTSTRAP_DIRS="less js fonts"
 BOOTSTRAP_JS="transition alert button carousel collapse dropdown modal tooltip popover scrollspy tab affix"
 METEOR_PACKAGE_FILE=package.js
@@ -34,7 +34,7 @@ cp -rv $BOOTSTRAP_ROOT/fonts/* lib/fonts
 cp -rv $BOOTSTRAP_ROOT/less/* lib/less
 # versions of meteor after v0.7.0.1 (excluding) want .import.less instead of .lessimport
 rename -v "s/\\.less/\\.import.less/" lib/less/*.less lib/less/*/*.less
-#sed -s -i "s/\\.less/\\.import.less/g" lib/less/*.less lib/less/*/*.less
+sed -i .bak "s/\\.less/\\.import.less/g" lib/less/*.less lib/less/*/*.less
 
 
 echo "generate package.js file"

@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Bootstrap 3, with Less files.",
-  version: "3.3.1_1",
+  version: "3.3.2",
   git: "https://github.com/pfafman/meteor-bootstrap3-less",
 });
 
@@ -29,4 +29,5 @@ Package.on_use(function (api) {
   api.add_files('lib/fonts/glyphicons-halflings-regular.svg', 'client');
   api.add_files('lib/fonts/glyphicons-halflings-regular.ttf', 'client');
   api.add_files('lib/fonts/glyphicons-halflings-regular.woff', 'client');
+  api.add_files('lib/fonts/glyphicons-halflings-regular.woff2', 'client');
 });
